@@ -25,8 +25,13 @@ start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+First of all you need to import our package.
+
+```dart
+import 'package:starlight_responsive/src/responsive_builder.dart';
+```
+
+And then
 
 ```dart
 import 'package:flutter/material.dart';
