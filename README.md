@@ -29,7 +29,22 @@ TODO: Include short and useful examples for package users. Add longer examples
 to `/example` folder. 
 
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+import 'package:starlight_responsive/src/responsive_builder.dart';
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return StarlightResponsive(
+      desktop: Scaffold(),
+      tablet: Scaffold(),
+      mobile: Scaffold(),
+      watch: Scaffold(),
+    );
+  }
+}
 ```
 
 ## Additional information
