@@ -11,19 +11,23 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# StarlightResponsive Builder
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Responsive builder for web,mobile,tablet and desktop.
+
+![Watch the video](https://user-images.githubusercontent.com/26484667/142706729-92b92dff-2556-425a-a675-44da6f405749.mp4)
 
 ## Getting started
 
 TODO: List prerequisites and provide or point to information on how to
 start using the package.
 
-## Usage
+
+
+
+## Installation
 
 Add responsive_builder as dependency to your pubspec file.
 
@@ -31,17 +35,19 @@ Add responsive_builder as dependency to your pubspec file.
 starlight_responsive:
 ```
 
+## Usage
+
 First of all you need to import our package.
 
 ```dart
-import 'package:starlight_responsive/src/responsive_builder.dart';
+import 'package:starlight_responsive/starlight_responsive.dart';
 ```
 
-And then
+## Responsive Builder
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:starlight_responsive/src/responsive_builder.dart';
+import 'package:starlight_responsive/starlight_responsive.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -49,14 +55,97 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const StarlightResponsive(
-      desktop: Scaffold(),
-      tablet: Scaffold(),
-      mobile: Scaffold(),
-      watch: Scaffold(),
+      desktop: Scaffold(),///Optional
+      tablet: Scaffold(),///Optional
+      mobile: Scaffold(),///Optional
+      watch: Scaffold(),///Optional
     );
   }
 }
 ```
+
+## Orientation Builder
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:starlight_responsive/starlight_responsive.dart';
+
+class Orientation extends StatelessWidget {
+  const Orientation({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const StarlightOrientationBuilder(
+      portrait: Scaffold(),///Require
+      landscape: Scaffold(),///Optional
+    );
+  }
+}
+```
+
+## Screen Break Point
+
+```dart
+  /// Default Values
+  /// Desktop 800 Tablet 550 Watch 200
+  StarlightResponsive.breakPoint(
+    desktop: 1080,
+    tablet: 800,
+    watch: 100,
+  );
+```
+
+## MediaQuery Values
+
+To Get Device PixelRatio
+```dart
+    /**
+     * The number of device pixels for each logical pixel. This number might not be a power of two. Indeed, it might not even be an integer. For example, the Nexus 6 has a device pixel ratio of 3.5.
+     * return Data [double]
+     */
+    context.devicePixelRatio;
+```
+
+To Get Device Orientation
+```dart
+    /**
+     * The orientation of the media (e.g., whether the device is in landscape or portrait mode).
+     * return Data [Orientation]
+     */
+    context.getOrientation;
+```
+
+To Get Device Padding
+```dart
+    /**
+     * The parts of the display that are completely obscured by system UI, typically by the device's keyboard.
+     * return Data [EdgeInsets]
+     */
+    context.getPadding;
+```
+
+To Get Device Width
+```dart
+    /**
+     * The horizontal extent of this size.
+     * return Data [double]
+     */
+    context.deviceWidth;
+```
+
+To Get Device Height
+```dart
+    /**
+     * The vertical extent of this size.
+     * return Data [double]
+     */
+    context.deviceHeight;
+```
+
+## Contact Us
+
+[Starlight Studio](https://www.facebook.com/starlightstudio.of/)
+
 
 ## Additional information
 

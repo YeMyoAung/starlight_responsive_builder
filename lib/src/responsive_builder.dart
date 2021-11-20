@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-class StarlightResponsive extends StatelessWidget {
+class StarlightResponsiveBuilder extends StatelessWidget {
   final Widget? _desktop;
   final Widget? _tablet;
   final Widget? _mobile;
   final Widget? _watch;
 
-  const StarlightResponsive({
+  const StarlightResponsiveBuilder({
     Key? key,
     Widget? desktop,
     Widget? tablet,
