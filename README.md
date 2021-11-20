@@ -13,6 +13,8 @@ and the Flutter guide for
 
 # StarlightResponsive Builder
 
+starlight_responsive is a responsive builder that encapsulates the responsive_builder.
+
 ## Features
 
 Responsive builder for web,mobile,tablet and desktop.
@@ -26,7 +28,7 @@ Add responsive_builder as dependency to your pubspec file.
 ```dart
 starlight_responsive: 
     git:
-      url: https://github.com/YeMyoAung/responsive_builder.git
+      url: https://github.com/YeMyoAung/starlight_responsive_builder.git
 ```
 
 ## Usage
@@ -38,6 +40,8 @@ import 'package:starlight_responsive/starlight_responsive.dart';
 ```
 
 ## Responsive Builder
+
+The StarlightResponsive is used as any other builder widget.
 
 ```dart
 import 'package:flutter/material.dart';
@@ -60,6 +64,9 @@ class MyApp extends StatelessWidget {
 
 ## Orientation Builder
 
+The StarlightOrientationBuilder is used as any other builder widget.
+
+
 ```dart
 import 'package:flutter/material.dart';
 import 'package:starlight_responsive/starlight_responsive.dart';
@@ -78,6 +85,8 @@ class Orientation extends StatelessWidget {
 ```
 
 ## Screen Break Point
+
+If you want to set the breakpoints for the responsive builders once you can call the line below before the app starts, or wherever you see fit
 
 ```dart
   /// Default Values
