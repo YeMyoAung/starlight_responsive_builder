@@ -25,6 +25,12 @@ start using the package.
 
 ## Usage
 
+Add responsive_builder as dependency to your pubspec file.
+
+```dart
+starlight_responsive:
+```
+
 First of all you need to import our package.
 
 ```dart
