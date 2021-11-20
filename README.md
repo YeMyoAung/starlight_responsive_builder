@@ -19,20 +19,14 @@ Responsive builder for web,mobile,tablet and desktop.
 
 ![Watch the video](https://user-images.githubusercontent.com/26484667/142706729-92b92dff-2556-425a-a675-44da6f405749.mp4)
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-
-
-
 ## Installation
 
 Add responsive_builder as dependency to your pubspec file.
 
 ```dart
-starlight_responsive:
+starlight_responsive: 
+    git:
+      url: https://github.com/YeMyoAung/responsive_builder.git
 ```
 
 ## Usage
@@ -145,10 +139,3 @@ To Get Device Height
 ## Contact Us
 
 [Starlight Studio](https://www.facebook.com/starlightstudio.of/)
-
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
